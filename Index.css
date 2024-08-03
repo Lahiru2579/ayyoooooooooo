@@ -1,0 +1,224 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #DBE2EF;
+    margin: 0px;
+    padding: 0px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #112D4E;
+    padding: 10px 20px;
+    color: #DBE2EF;
+    width: 100%;
+}
+
+.logo-text {
+    font-family: 'Krona One', sans-serif;
+    margin-left: 100px;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    max-width: 700px;
+    margin: 0 20px;
+}
+
+.search-container input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px 0 0 5px;
+    border: 1px solid #ccc;
+    border-right: none;
+}
+
+.search-container select {
+    padding: 10px;
+    border-radius: 0;
+    border: 1px solid #ccc;
+    border-left: none;
+    border-right: none;
+}
+
+.search-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #607d8b;
+    border: none;
+    padding: 10px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.search-button img {
+    width: 25px;
+    height: 25px;
+}
+
+.account-cart-container {
+    display: flex;
+    align-items: center;
+}
+
+.account {
+    margin-right: 50px;
+}
+
+.cart {
+    display: flex;
+    align-items: center;
+    margin-right: 100px;
+}
+
+.cart-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.secondary-navbar {
+    background-color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    width: 100%;
+}
+
+.secondary-navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.secondary-navbar ul li {
+    padding: auto;
+}
+
+.secondary-navbar ul li a {
+    text-decoration: none;
+    color: #607d8b;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    padding: 0px;
+}
+
+.secondary-navbar ul li a:hover {
+    color: #112D4E;
+}
+
+/*slider*/
+
+.fullscreen-background {
+    width: 100%;
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+    animation: animate 20s infinite;
+    position: relative;
+    z-index: -1;
+}
+
+@keyframes animate {
+    0% {
+        background-image: url(Home-page-images/bg1.jpg);
+    }
+    20% {
+        background-image: url(Home-page-images/bg2.jpg);
+    }
+    40% {
+        background-image: url(Home-page-images/bg3.jpg);
+    }
+    60% {
+        background-image: url(Home-page-images/bg4.jpg);
+    }
+    80% {
+        background-image: url(Home-page-images/bg5.jpg);
+    }
+    100% {
+        background-image: url(Home-page-images/bg5.jpg);
+    }
+}
+
+.center {
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+/*categories*/
+
+.container {
+    display: grid;
+    gap: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.category {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #112d4e;
+    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.category img { 
+    width: 300px;
+    height: 200px;
+    object-fit: fill;
+}
+
+.category span {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: #000000;
+    padding: 5px 10px;
+    font-size: 1.4em;
+    font-family: 'Krona One', sans-serif;;
+}
+
+.category.men {
+    grid-column: 1 / 3;
+    grid-row: 1;
+}
+
+.category.women {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.category.kids {
+    grid-column: 4;
+    grid-row: 1;
+}
+
+.category.personal-care {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.category.home-deco {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.category.accessories {
+    grid-column: 3 / 5;
+    grid-row: 2;
+}

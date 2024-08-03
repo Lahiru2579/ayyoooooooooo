@@ -1,0 +1,381 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #DBE2EF;
+    color: #212529;
+}
+
+
+/* Navigation bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #112D4E; 
+    padding: 10px 20px;
+    color: #DBE2Ef;
+}
+
+.logo-text {
+    font-family: 'Krona One', sans-serif;
+    border-radius: 50%;
+    margin-left: 100px;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    max-width: 700px;
+    margin: 0 20px;
+}
+
+.search-container input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px 0 0 5px;
+    border: 1px solid #ccc;
+    border-right: none;
+}
+
+.search-container select {
+    padding: 10px;
+    border-radius: 0;
+    border: 1px solid #ccc;
+    border-left: none;
+    border-right: none;
+}
+
+.search-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #607d8b; 
+    border: none;
+    padding: 10px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.search-button img {
+    width: 25px;
+    height: 25px;
+}
+
+.account-cart-container {
+    display: flex;
+    align-items: center;
+}
+
+.account {
+    margin-right: 50px;
+    font-family: 'Inter', sans-serif;
+}
+
+.cart {
+    display: flex;
+    align-items: center;
+    margin-right: 100px;
+    font-family: 'Inter', sans-serif;
+}
+
+.cart-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.secondary-navbar {
+    background-color: white;
+    padding: 10px 20px;
+}
+
+.secondary-navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.secondary-navbar ul li {
+    padding: auto;
+}
+
+.secondary-navbar ul li a {
+    text-decoration: none;
+    color: #607d8b;
+    font-weight: 700; 
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    padding: 0px;
+}
+
+.secondary-navbar ul li a:hover {
+    color: #112D4E;
+}
+
+/* Open image styles */
+.container {
+    position: relative;
+    width: 100%;
+    height: 50%; 
+    text-align: center;
+}
+.container img {
+    width: 100%; 
+    height: 50%; 
+}
+.image {
+    display: block;
+    width: 100%;
+    height: 20px;
+}
+.overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); 
+    color: #f1f1f1; 
+    width: 100%; 
+    height: 100%; 
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    text-align: center;
+}
+.text {
+    font-size: 8em;
+    padding: 20px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: bolder;
+}
+
+
+/* New drop styles */
+.new-drops {
+    text-align: center;
+    padding: 30px 10px;
+    background-color: #DBE2EF;
+}
+
+.new-drops h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #112D4E;
+    font-family: 'Krona One', sans-serif;
+    font-weight: 200;
+}
+
+.product-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.product-item {
+    background-color: #FFFFFF;
+    padding: 20px;
+    border: 1px solid #E0E0E0;
+    border-radius: 10px;
+    width: 200px;
+    text-align: center;
+}
+
+.product-item img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.product-item p {
+    font-size: 1em;
+    margin: 10px 0;
+    font-family: 'Inter', sans-serif;
+}
+
+
+/* Products styles */
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.product-card {
+    background-color: #FFFFFF;
+    overflow: hidden;
+    width: calc(25% - 20px); 
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px;
+    width: 50px;
+    height: 450px;
+    margin-bottom: 30px; 
+   
+}
+
+.product-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+.product-info {
+    padding: 10px;
+}
+
+.product-title {
+    font-size: 20px;
+    margin: 0;
+    color: #112D4E;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+
+.product-price {
+    font-size: 18px;
+    color: #112D4E;
+    margin: 10px 0;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+
+.product-sizes-cart {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.product-sizes {
+    flex-grow: 1;
+    text-align: center;
+    font-size: 16px;
+    color: #112D4E;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+
+.add-to-cart-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px; 
+    height: 40px; 
+    border-radius: 4px; 
+    background-color: #fff; 
+    margin-left: 10px; 
+}
+
+.add-to-cart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.add-to-cart svg {
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+    color: #0f0e0e;
+}
+
+
+@media (min-width: 1200px) {
+    .product-card {
+        width: calc(18% - 20px); 
+    }
+
+    .product-title {
+        font-size: 18px; 
+    }
+
+    .product-price {
+        font-size: 16px; 
+    }
+
+    .product-sizes {
+        font-size: 14px; 
+    }
+}
+
+
+/* Footer styles */
+.footer {
+    background-color: #112d4e;
+    color: #dbe2ef;
+    padding: 30px 0;
+    width: 100%;
+    box-sizing: border-box; 
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0 20px; 
+    width: 100%;
+    max-width: 100%; 
+    box-sizing: border-box; 
+}
+
+.footer-section {
+    max-width: 300px;
+    margin-bottom: 20px;
+    font-family: 'Inter', sans-serif;
+}
+
+.footer-section h2 {
+    margin-bottom: 10px;
+    color: #dbe2ef;
+    font-family:'Krona One', sans-serif;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #dbe2ef;
+    text-decoration: none;
+}
+
+.footer-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    border-top: 1px solid #dbe2ef;
+    margin-top: 5px;
+    width: 100%;
+    box-sizing: border-box; 
+}
+
+.social-icons {
+    margin-bottom: 10px;
+}
+
+.social-icons a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.social-icons a:hover {
+    color: #f0f0f0;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
